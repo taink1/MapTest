@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_qu_place" translatesAutoresizingMaskIntoConstraints="NO" id="mNc-Em-M9b">
+                    <rect key="frame" x="8" y="10" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="mFj-6p-PGi"/>
+                        <constraint firstAttribute="height" constant="26" id="u5f-vq-fGT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose on map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAM-Nu-x2K">
+                    <rect key="frame" x="41" y="12" width="271" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLq-2q-GZW">
+                    <rect key="frame" x="0.0" y="45" width="320" height="43"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="v8f-HH-J5w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="Recent history">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-Mg-ChT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="WEF-co-TMV"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mNc-Em-M9b" firstAttribute="centerY" secondItem="bVz-Mg-ChT" secondAttribute="centerY" id="6R0-0l-gAn"/>
+                <constraint firstItem="bVz-Mg-ChT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6qB-qa-2s9"/>
+                <constraint firstItem="mNc-Em-M9b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9uq-E2-uQ7"/>
+                <constraint firstItem="iAM-Nu-x2K" firstAttribute="centerY" secondItem="bVz-Mg-ChT" secondAttribute="centerY" id="NuW-1Y-lem"/>
+                <constraint firstAttribute="trailing" secondItem="bVz-Mg-ChT" secondAttribute="trailing" id="VZa-nc-FWE"/>
+                <constraint firstAttribute="trailing" secondItem="iAM-Nu-x2K" secondAttribute="trailing" constant="8" id="cgU-yf-5xI"/>
+                <constraint firstAttribute="bottom" secondItem="jLq-2q-GZW" secondAttribute="bottom" id="gWB-GA-58R"/>
+                <constraint firstItem="iAM-Nu-x2K" firstAttribute="leading" secondItem="mNc-Em-M9b" secondAttribute="trailing" constant="7" id="gWY-SS-3wE"/>
+                <constraint firstItem="bVz-Mg-ChT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mJ4-0x-Jsq"/>
+                <constraint firstItem="jLq-2q-GZW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nwj-pS-QG7"/>
+                <constraint firstAttribute="trailing" secondItem="jLq-2q-GZW" secondAttribute="trailing" id="nxA-JV-gaS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chooseMapButton" destination="bVz-Mg-ChT" id="HGT-wc-Itl"/>
+                <outlet property="historyButton" destination="jLq-2q-GZW" id="0fF-uL-5XB"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_qu_place" width="24" height="24"/>
+    </resources>
+</document>
